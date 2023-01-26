@@ -10,11 +10,11 @@
 4. Set username by: `$ git config --global user.name "name_of_your_GitHub_profile"`
 5. Set email by: `$ git config --global user.email "email@example.com"`
 6. Select some MAIN folder with write permision.
-7. Clone the **Lecture1** repository from GitHub by: `$ https://github.com/MPA-AB2/Lecture1_23.git`
-8. In the MAIN folder should be new folder **Lecture1**.
-9. In the **Lecture1** folder create subfolder **NAME_OF_YOUR_TEAM**.
+7. Clone the **Lecture1_23** repository from GitHub by: `$ https://github.com/MPA-AB2/Lecture1_23.git`
+8. In the MAIN folder should be new folder **Lecture1_23**.
+9. In the **Lecture1_23** folder create subfolder **NAME_OF_YOUR_TEAM**.
 10. In the **NAME_OF_YOUR_TEAM** folder create two subfolders: **TASK1** and **TASK2**
-11. Run Git bash in **Lecture1** folder (should be *main* branch active).
+11. Run Git bash in **Lecture1_23** folder (should be *main* branch active).
 12. Create new branch for your team by: `$ git checkout -b NAME_OF_YOUR_TEAM`
 13. Check that  *NAME_OF_YOUR_TEAM* branch is active.
 14. Continue to First task...
@@ -39,17 +39,16 @@
    * Apply total variation filter on testing image
    * Apply non-local means (NLM) filter on testing image
 
-6. Explore each method more deeply and try to find the optimal parameters’ setting of each method in order to get the most efficient and useful result (estimation of denoised image). Calculate above-mentioned evaluation criteria for each method. Save one **TIFF** image as a joined figure consisted of 7 subfigures showing the best achieved results of particular denoising methods (also with evaluation criteria values). **Push** your program script into GitHub repository **Lecture1** using the **branch of your team** (stage changed -> fill commit message -> sign off -> commit -> push -> select *NAME_OF_YOUR_TEAM* branch -> push -> manager-core -> web browser -> fill your credentials).
+6. Explore each method more deeply and try to find the optimal parameters’ setting of each method in order to get the most efficient and useful result (estimation of denoised image). Calculate above-mentioned evaluation criteria for each method. Save one **TIFF** image as a joined figure consisted of 7 subfigures showing the best achieved results of particular denoising methods (also with evaluation criteria values). **Push** your program script into GitHub repository **Lecture1_23** using the **branch of your team** (stage changed -> fill commit message -> sign off -> commit -> push -> select *NAME_OF_YOUR_TEAM* branch -> push -> manager-core -> web browser -> fill your credentials).
 
 ### Second task – a student competition
 
-1. Download the images in a zip folder from [here](https://www.vut.cz/www_base/vutdisk.php?i=283824a5ed). Extract the content of the zip folder into **Lecture1** folder. The zip folder contains an encrypted ground truht images (*GT.mat*) and their noisy versions (**images_noisy** folder). The encrypted MATLAB function *noise_eval.p* will serve for evaluation of your results obtained in a challenge competition. The function allows automatic calculation of PSNR, SSIM, and PIQE from the denoised images at the input path. Function could be called as:
+1. Download the images in a zip folder from [here](https://www.vut.cz/www_base/vutdisk.php?i=283824a5ed). Extract the content of the zip folder into **Lecture1_23** folder. The zip folder contains an encrypted ground truht images (*GT.mat*) and their noisy versions (**images_noisy** folder). The encrypted MATLAB function *noise_eval.p* will serve for evaluation of your results obtained in a challenge competition. The function allows automatic calculation of PSNR, SSIM, and PIQE from the denoised images at the input path. Function could be called as:
 
 * `noise_eval(path_to_denoised_images)` to print the evaluation values, or
 * `evaluation_details = noise_eval(path_to_denoised_images)` to get strucure of the detailed evaluation for each image, or
 * `noise_eval(path_to_denoised_images, True)` to get the graphical output in addition to printed values.
-* *(Python evaluation)* [GT here](https://www.vut.cz/www_base/vutdisk.php?i=283995a2ca) and [function here](https://www.vut.cz/www_base/vutdisk.php?i=283996aed8) + [PIQE code here](https://github.com/buyizhiyou/NRVQA/blob/master/piqe.py)
 
-2. In the next step, explore the data. Make a script in **Lecture1\NAME_OF_YOUR_TEAM\TASK2** folder to apply any of the tested methods, or their combination, to the image dataset and try to get the best denoising results. Please, note that the dataset covers images of various degrees of noise, which may differ also between particular RGB channels of each image. You need to consider all these aspects in development of your method.
+2. In the next step, explore the data. Make a script in **Lecture1_23\NAME_OF_YOUR_TEAM\TASK2** folder to apply any of the tested methods, or their combination, to the image dataset and try to get the best denoising results. Please, note that the dataset covers images of various degrees of noise, which may differ also between particular RGB channels of each image. You need to consider all these aspects in development of your method.
 
-3. Submit the best-obtained result of your method evaluated on the competition dataset using the evaluation function (i.e. submit the calculated evaluation values) into a shared [Excel table](https://docs.google.com/spreadsheets/d/1W-kq6u11Wf8HGYT3mj8hwNaUwhdwMoKl/edit?usp=sharing&ouid=104533478166360687639&rtpof=true&sd=true). The evaluation of results from each team will be presented at the end of the lecture. **Push** your final program with the best results into GitHub repository **Lecture1** using the **branch of your team** (stage changed -> fill commit message -> sign off -> commit -> push -> select *NAME_OF_YOUR_TEAM* branch -> push -> manager-core).
+3. Submit the best-obtained result of your method evaluated on the competition dataset using the evaluation function (i.e. submit the calculated evaluation values) into a shared [Excel table](https://docs.google.com/spreadsheets/d/1W-kq6u11Wf8HGYT3mj8hwNaUwhdwMoKl/edit?usp=sharing&ouid=104533478166360687639&rtpof=true&sd=true). The evaluation of results from each team will be presented at the end of the lecture. **Push** your final program with the best results into GitHub repository **Lecture1_23** using the **branch of your team** (stage changed -> fill commit message -> sign off -> commit -> push -> select *NAME_OF_YOUR_TEAM* branch -> push -> manager-core).
