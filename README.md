@@ -1,6 +1,6 @@
 # Lecture 1 – IMAGE DENOISING
 
-[**Benchmark Results**](https://moodle.vut.cz/pluginfile.php/400662/mod_resource/content/1/BenchmarkDenoising_2022.xlsx%20-%20List1.pdf)
+[**Benchmark Results**](https://docs.google.com/spreadsheets/d/1jsDvDSrWfIivlTZ-4eFtnNy0qJM3-DCJ/edit#gid=1757787205)
 
 ## Preparation
 
@@ -51,4 +51,4 @@
 
 2. In the next step, explore the data. Make a script in **Lecture1_23\NAME_OF_YOUR_TEAM\TASK2** folder to apply any of the tested methods, or their combination, to the image dataset and try to get the best denoising results. Please, note that the dataset covers images of various degrees of noise, which may differ also between particular RGB channels of each image. You need to consider all these aspects in development of your method.
 
-3. Submit the best-obtained result of your method evaluated on the competition dataset using the evaluation function (i.e. submit the calculated evaluation values) into a shared [Excel table](https://docs.google.com/spreadsheets/d/1W-kq6u11Wf8HGYT3mj8hwNaUwhdwMoKl/edit?usp=sharing&ouid=104533478166360687639&rtpof=true&sd=true). The evaluation of results from each team will be presented at the end of the lecture. **Push** your final program with the best results into GitHub repository **Lecture1_23** using the **branch of your team** (stage changed -> fill commit message -> sign off -> commit -> push -> select *NAME_OF_YOUR_TEAM* branch -> push -> manager-core).
+3. Submit the best-obtained result of your method evaluated on the competition dataset using the evaluation function (i.e. submit the calculated evaluation values) into a shared [Excel table](https://docs.google.com/spreadsheets/d/1jsDvDSrWfIivlTZ-4eFtnNy0qJM3-DCJ/edit#gid=1757787205). The evaluation of results from each team will be presented at the end of the lecture. **Push** your final program with the best results into GitHub repository **Lecture1_23** using the **branch of your team** (stage changed -> fill commit message -> sign off -> commit -> push -> select *NAME_OF_YOUR_TEAM* branch -> push -> manager-core).
