@@ -10,7 +10,7 @@
 4. Set username by: `$ git config --global user.name "name_of_your_GitHub_profile"`
 5. Set email by: `$ git config --global user.email "email@example.com"`
 6. Select some MAIN folder with write permision.
-7. Clone the **Lecture1** repository from GitHub by: `$ git clone https://github.com/MPC-AB2/Lecture1.git`
+7. Clone the **Lecture1** repository from GitHub by: `$ https://github.com/MPA-AB2/Lecture1_23.git`
 8. In the MAIN folder should be new folder **Lecture1**.
 9. In the **Lecture1** folder create subfolder **NAME_OF_YOUR_TEAM**.
 10. In the **NAME_OF_YOUR_TEAM** folder create two subfolders: **TASK1** and **TASK2**
