@@ -18,40 +18,67 @@ filtered_wiener = wiener2(noisy_gray, [10,2]);
 
 filtered_bilateral = imbilatfilt(noisy_gray, 100000);
 
-filtered_aniso_diffusion = imdiffusefilt(noisy_gray);
+filtered_aniso_diffusion = imdiffusefilt(noisy_gray, 'NumberOfIterations', 20);
 
 filtered_total_variation = TVL1denoise(noisy_gray, 1.2);
 
 filtered_nlm = imnlmfilt(noisy_gray);
 
+% figure
+% imshow(im2gray(original))
+% piqe_val = piqe(im2gray(original));
+% title(["Original, PIQE:" num2str(piqe_val)])
+% figure
+% imshow(noisy_gray)
+% piqe_val = piqe(noisy_gray);
+% psnr_val = psnr(noisy_gray, original);
+% ssim_val = ssim(noisy_gray, original);
+% title("Noisy")
+% figure
+% imshow(filtered_gaussian)
+% piqe_val = piqe(filtered_gaussian);
+% psnr_val = psnr(filtered_gaussian, original);
+% ssim_val = ssim(filtered_gaussian, original);
+% title("Gaussian")
+% figure
+% imshow(filtered_wiener)
+% title("Wiener")
+% figure
+% imshow(filtered_bilateral)
+% title("Bilateral")
+% figure
+% imshow(filtered_aniso_diffusion)
+% title("Anisotropic Diffusion")
+% figure
+% imshow(filtered_total_variation)
+% title("Total variation")
+% figure
+% imshow(filtered_nlm)
+% title("Non-local Means")
+
+
 figure
+subplot 241
 imshow(im2gray(original))
-piqe_val = piqe(im2gray(original));
-title(["Original, PIQE:" num2str(piqe_val)])
-figure
+title("Original")
+subplot 242
 imshow(noisy_gray)
-piqe_val = piqe(noisy_gray);
-psnr_val = psnr(noisy_gray, original);
-ssim_val = ssim(noisy_gray, original);
 title("Noisy")
-figure
+subplot 243
 imshow(filtered_gaussian)
-piqe_val = piqe(filtered_gaussian);
-psnr_val = psnr(filtered_gaussian, original);
-ssim_val = ssim(filtered_gaussian, original);
 title("Gaussian")
-figure
+subplot 244
 imshow(filtered_wiener)
 title("Wiener")
-figure
+subplot 245
 imshow(filtered_bilateral)
 title("Bilateral")
-figure
+subplot 246
 imshow(filtered_aniso_diffusion)
 title("Anisotropic Diffusion")
-figure
+subplot 247
 imshow(filtered_total_variation)
 title("Total variation")
-figure
+subplot 248
 imshow(filtered_nlm)
 title("Non-local Means")
