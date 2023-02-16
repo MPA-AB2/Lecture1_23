@@ -25,15 +25,15 @@ for i = 4:size(obr, 1)
 
 
 im_filtR1 = imnlmfilt(imR,"DegreeOfSmoothing",27,"SearchWindowSize",21);
-    im_filtR2 = imdiffusefilt(imR);
+    im_filtR2 = imgaussfilt(im_filtR1,3);
 
 %     im_filtG = imdiffusefilt(imG);
     im_filtG1 = imnlmfilt(imG,"DegreeOfSmoothing",27,"SearchWindowSize",21);
-    im_filtG2 = imdiffusefilt(imG);
+    im_filtG2 = imgaussfilt(im_filtG1,3);
 
 %     im_filtB = imdiffusefilt(imB);
     im_filtB1 = imnlmfilt(imB,"DegreeOfSmoothing",27,"SearchWindowSize",21);
-    im_filtB2 = imdiffusefilt(imB);
+    im_filtB2 = imgaussfilt(im_filtB1,3);
 % 
 %     figure(2);
 %     subplot 231
@@ -56,14 +56,12 @@ im_filtR1 = imnlmfilt(imR,"DegreeOfSmoothing",27,"SearchWindowSize",21);
 %     imshow(im_filtG)
 %     title("g-filt")
 
-im_filtR = (double(im_filtR1) + double(im_filtR2))/2;
-    im_filtG = (double(im_filtG1) + double(im_filtG2))/2;
-    im_filtB = (double(im_filtB1) + double(im_filtB2))/2;
 
     new_im = im;
-    new_im(:,:,1) = im_filtR;
-    new_im(:,:,2) = im_filtG;
-    new_im(:,:,3) = im_filtB;
+    new_im(:,:,1) = im_filtR2;
+    new_im(:,:,2) = im_filtG2;
+    new_im(:,:,3) = im_filtB2;
+
     
 %     figure(3);
 %     imshow(new_im)
