@@ -25,6 +25,7 @@ for k = 1:11
     channel = im(:,:,chan);
 %     channel_gauss = channel;
     channel_aniso_filt = imdiffusefilt(channel, 'NumberOfIterations', 4);
+    
     %channel_medfilt = medfilt2(channel_aniso_filt);
     %filtered_im(:,:,chan) = channel_aniso_filt * w(chan);
     filtered_im(:,:,chan)= channel_aniso_filt;
