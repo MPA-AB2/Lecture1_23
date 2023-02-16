@@ -18,6 +18,9 @@ for k = 1:11
   G = im(:,:,2);
   B = im(:,:,3);
   %filtered_im = []
+  for chan = [R G B]
+      channel_gauss = imgaussfilt(chan, 2)
+  end
   for chan = 1:3
     channel = im(:,:,chan);
 %     channel_gauss = channel;
