@@ -43,7 +43,7 @@
 
 ### Second task – a student competition
 
-1. Download the images in a zip folder from [here](https://www.vut.cz/www_base/vutdisk.php?i=283824a5ed). Extract the content of the zip folder into **Lecture1_23** folder. The zip folder contains an encrypted ground truht images (*GT.mat*) and their noisy versions (**images_noisy** folder). The encrypted MATLAB function *noise_eval.p* will serve for evaluation of your results obtained in a challenge competition. The function allows automatic calculation of PSNR, SSIM, and PIQE from the denoised images at the input path. Function could be called as:
+1. Download the images in a zip folder from [here](https://www.vut.cz/www_base/vutdisk.php?i=308990af26). Extract the content of the zip folder into **Lecture1_23** folder. The zip folder contains an encrypted ground truht images (*GT.mat*) and their noisy versions (**images_noisy** folder). The encrypted MATLAB function *noise_eval.p* will serve for evaluation of your results obtained in a challenge competition. The function allows automatic calculation of PSNR, SSIM, and PIQE from the denoised images at the input path. Function could be called as:
 
 * `noise_eval(path_to_denoised_images)` to print the evaluation values, or
 * `evaluation_details = noise_eval(path_to_denoised_images)` to get strucure of the detailed evaluation for each image, or
