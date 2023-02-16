@@ -23,7 +23,7 @@
 
 ### First task – demonstration of filterring methods
 
-1. Download the images in a zip folder from [here](https://www.vut.cz/www_base/vutdisk.php?i=283822a7cc). The zip folder contains an original image and its noisy version. Assume the additive Gaussian white noise with zero mean and unknown variance. Convert both images into the gray-scale version (keep intensity value in the range 0 to 255). Further, you will use these two images for testing of various denoising algorithms. The goal will be to get a new - denoised image as much as similar to the original one.
+1. Download the images in a zip folder from [here](https://www.vut.cz/www_base/vutdisk.php?i=308960ae59). The zip folder contains an original image and its noisy version. Assume the additive Gaussian white noise with zero mean and unknown variance. Convert both images into the gray-scale version (keep intensity value in the range 0 to 255). Further, you will use these two images for testing of various denoising algorithms. The goal will be to get a new - denoised image as much as similar to the original one.
 
 2. Make a script in **Lecture1_23\NAME_OF_YOUR_TEAM\TASK1** folder for computation of PSNR, SSIM, and any of non-reference image quality assessment criteria and calculate these parameters between the original image and its noisy variant. Look at the results and think about the parameters’ values – when will the values be decreasing and when increasing?
 
