@@ -10,13 +10,20 @@ for k = 1:length(myFiles)
     fullFileName = fullfile(myFiles(k).folder, baseFileName);
     fprintf(1, 'Now reading %s\n', fullFileName);
     im = imread(fullFileName);
-
+    n = noisiness(im);
     RGB = cell(1,3);
     for i = 1:3
         chan = im(:,:,i);
-        chan_filt =  wiener2(chan, [30,30]);
+        chan_filt =  wiener2(chan, [20,20]);
+
+        if noisiness > 30
+            chan_filt = im2uint8(TVL1denoise(chan_filt, 1.5));
+        end
+
         RGB{i} = chan_filt;
     end
+    
+
     result = cat(3, RGB{1}, RGB{2}, RGB{3});
     imwrite(result, strcat("images_denoised\", baseFileName))
 end
